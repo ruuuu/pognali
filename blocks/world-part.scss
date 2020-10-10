@@ -1,0 +1,38 @@
+.world-part {
+  font-weight: 700;
+  list-style: none;
+}
+
+.world-part__item {
+  padding-bottom: 5px;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.world-part__item a {
+  text-decoration: none;
+  color: #192144;
+}
+
+.world-part__item--active {
+  opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .world-part__item {
+    margin-right: 27px;
+    margin-bottom: 2px;
+  }
+
+  .world-part__item:nth-last-child(-n + 1) {
+    margin-right: 0;
+  }
+}

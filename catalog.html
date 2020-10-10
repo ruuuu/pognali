@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdnjs.com/libraries/normalize/8.0.1" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs main-nav--catalog">
+        <a class="main-nav__logo" href="index.html">
+          <picture class="main-nav__logo-image">
+            <source class="main-nav__logo-image--desktop" srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
+            <source class="main-nav__logo-image--tablet" srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+            <img class="main-nav__logo-image--mobile" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__site-list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                <span data-hover="О Сервисе">О сервисе</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                <span data-hover="Направления">Направления</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                <span data-hover="Попутчики">Попутчики</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__communication communication">
+            <li class="communication__item">
+              <a class="communication__link communication__link--call" href="tel:88005558628" aria-label="Телефон для связи">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" xml:space="preserve">
+                  <path d="M12.6 18h-.8c-3.6-.4-6.2-2.1-8.1-4.3C1.8 11.6.3 8.8 0 5V4c.1-.7.4-1.1.8-1.5C1.2 2 2 1.4 2.6 1.3c.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3.3.1.6.2 1 .4.5.2 1.4.5 1.7.9.3.4.5 1.2.4 1.7-.1.8-1.6 1.8-2.4 2.1z" id="UrwUhy_1_"/><path d="M9.1 1.1c4.3 0 7.8 3.6 7.8 8H18c0-5-4-9.1-8.9-9.1v1.1zm0 5.8V8c.6 0 1 .5 1 1.1h1.1c0-1.2-.9-2.2-2.1-2.2z"/><path class="st0" d="M9.1 4.6c2.4 0 4.4 2 4.4 4.5h1.2c0-3.1-2.5-5.7-5.5-5.7v1.2h-.1z"/>
+                </svg>
+                <span class="visually-hidden">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="communication__item">
+              <a class="communication__link communication__link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Почта для связи">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" xml:space="preserve">
+                  <path class="st0" d="M14.9 1.8c1.2-1 .9-1.8-.7-1.8H3.7c-1.5 0-1.8.8-.6 1.8l3.7 3.1c1.2 1 3.2 1 4.4 0l3.7-3.1z"/><path class="st0" d="M11.9 7.1c-1.2 1-2.2 1.8-2.2 1.8-.1.1-.2.1-.3.1h-.1c-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1h-.1c-.1 0-.2 0-.3-.1 0 0-1-.8-2.2-1.8L2.2 3.8C1 2.8 0 3.3 0 4.8v6.3C0 12.7 1.3 14 2.8 14h12.3c1.6 0 2.8-1.3 2.8-2.8V4.8c0-1.6-1-2-2.2-1l-3.8 3.3z"/>
+                </svg>
+                <span class="visually-hidden">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__authorization" href="#">Авторизация</a>
+            </li>
+          </ul>
+          <ul class="main-nav__contact contact">
+            <li class="contact__item">
+              <a class="contact__link contact__link--call" href="tel:88005558628" aria-label="Телефон для связи">
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link contact__link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Почта для связи">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__social social">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
+                  <path d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z"/>
+                </svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 30 15.8">
+                  <path d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6h4.2c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3h-5.3c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8V3.4c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1H1.6c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z"/>
+                </svg>
+                <span class="visually-hidden">Vkontakte</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="18" viewBox="0 0 23 23" xml:space="preserve">
+                  <path class="st0" d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z"/><path class="st0" d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z"/><circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+                </svg>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="page-menu">
+        <div class="page-menu__wrapper container">
+          <h1 class="page-menu__title">Попутчики</h1>
+          <a href="index.html" class="page-menu__link">На главную</a>
+        </div>
+      </section>
+      <section class="country-filter country-filter--closed country-filter--nojs">
+        <h2>Фильтрация по странам:</h2>
+        <a class="country-filter__toggle" href="#">
+          <span class="country-filter__toggle--open">Показать все</span>
+          <span class="country-filter__toggle--close">Свернуть</span>
+        </a>
+        <div class="country-filter__wrapper container">
+          <ul class="country-filter__world-part world-part">
+            <li class="world-part__item world-part__item--active"><a href="#">Европа</a></li>
+            <li class="world-part__item"><a href="#">Азия</a></li>
+            <li class="world-part__item"><a href="#">Америка</a></li>
+            <li class="world-part__item"><a href="#">Острова</a></li>
+          </ul>
+          <ul class="country-filter__alphabet-list alphabet-list">
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter alphabet-list__letter--active">А</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Австралия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Австрия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Азербайджан</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Албания</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Алжир</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Ангола</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Андорра</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Антигуа и Барбуда</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Аргентина</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Армения</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Афганистан</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Б</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Багамские Острова</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бангладеш</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Барбадос</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бахрейн</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Белоруссия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Белиз</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бельгия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бенин</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Болгария</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Боливия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Босния и Герцеговина</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Ботсвана</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бразилия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бруней</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Буркина-Фасо</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бурунди</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Бутан</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">В</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Вануату</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Великобритания</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Венгрия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Венесуэла</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Восточный Тимор</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Вьетнам</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Г</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Габон</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гаити</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гайана</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гамбия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гана</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гватемала</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гвинея</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гвинея-Бисау</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Германия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гондурас</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Гренада</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Греция</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Грузия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Д</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Дания</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Джибути</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Доминика</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Доминикана</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Е</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Египет</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">З</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Замбия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Зимбабве</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">И</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Израиль</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Индия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Индонезия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Иордания</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Ирак</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Иран</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Ирландия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Исландия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Испания</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Италия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">К</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Кабо-Верде</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Казахстан</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Камбоджа</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Камерун</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Канада</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Катар</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Кения</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Кипр</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Киргизия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Кирибати</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Китай</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Колумбия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Л</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Лаос</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Латвия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Лесото</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Либерия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Ливан</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Ливия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Литва</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Лихтенштейн</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Люксембург</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">М</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Маврикий</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Мавритания</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Мадагаскар</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Малави</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Малайзия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Мали</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Мальдивы</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Мальта</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Марокко</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Н</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Намибия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Науру</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Непал</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Нигер</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Нигерия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Нидерланды</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Никарагуа</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Новая Зеландия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Норвегия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">О</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">ОАЭ</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Оман</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">П</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Пакистан</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Палау</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Панама</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Папуа - Новая Гвинея</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Парагвай</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Перу</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Польша</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Португалия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Р</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Руанда</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Румыния</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Россия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">С</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Сальвадор</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Самоа</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Сан-Марино</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Саудовская Аравия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Сейшелы</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Сенегал</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Сербия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Сингапур</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Сирия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Словакия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Словения</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">США</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Т</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Таджикистан</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Тайланд</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Танзания</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Того</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Тонга</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Тринидад и Тобаго</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Тувалу</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Тунис</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Туркмения</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Турция</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">У</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Уганда</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Узбекистан</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Украина</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Уругвай</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Ф</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Фиджи</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Филиппины</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Финляндия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Франция</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Х</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Хорватия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Ч</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Чад</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Черногория</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Чехия</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Чили</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Ш</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Швейцария</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Щвеция</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Шри-Ланка</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Э</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Эквадор</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Эритрея</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Эсватини</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Эстония</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Эфиопия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter">Ю</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">ЮАР</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Южный Судан</a>
+                </li>
+              </ul>
+            </li>
+            <li class="alphabet-list__item">
+              <a class="alphabet-list__letter" >Я</a>
+              <ul class="alphabet-list__letter-list letter-list">
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Ямайка</a>
+                </li>
+                <li class="letter-list__item">
+                  <a class="letter-list__country">Япония</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="country-filter__letter-list letter-list">
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="isle/australia">Австралия</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="europe/austria">Австрия</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="asia/azerbaydzhan">Азербайджан</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="europe/albaniya">Албания</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="afrika/alzhir">Алжир</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="afrika/angola">Ангола</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="europe/andorra">Андорра</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="isle/antiguaibarbuda">Антигуа и Барбуда</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="america/argentina">Аргентина</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="asia/armeniya">Армения</a>
+            </li>
+            <li class="letter-list__item">
+              <a class="letter-list__country" href="asia/armeniya">Афганистан</a>
+            </li>
+          </ul>
+          <a class="country-filter__close" href="#">Свернуть</a>
+        </div>
+      </section>
+      <div class="page-main__desktop-wrapper">
+      <section class="filter container">
+        <h2 class="filter__title">Подберите идеального попутчика</h2>
+        <form class="filter__form filter-form"  action="https://echo.htmlacademy.ru" method="post">
+          <div class="filter-form__wrapper">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--hobby filter-form__fieldset--nojs filter-form__fieldset--closed">
+              <legend class="filter-form__legend">Хобби</legend>
+              <button class="filter-form__toggle filter-form__toggle--hobby" type="button"></button>
+              <ul class="filter-form__list">
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="rock" id="id-sport" checked>
+                  <label for="id-sport">Спортзал</label>
+                </li>
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="hookah" id="id-hookah">
+                  <label for="id-hookah">Кальян</label>
+                </li>
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="sofa" id="id-sofa">
+                  <label for="id-sofa">Диван</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-form__wrapper">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--music filter-form__fieldset--nojs filter-form__fieldset--closed">
+              <legend class="filter-form__legend">Музыка</legend>
+              <button class="filter-form__toggle filter-form__toggle--music" type="button"></button>
+              <ul class="filter-form__list">
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="rock" id="id-rock" checked>
+                  <label for="id-rock">Тяжелый рок</label>
+                </li>
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="hiphop" id="id-hiphop">
+                  <label for="id-hiphop">Русский рэп</label>
+                </li>
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="eurodance" id="id-eurodance">
+                  <label for="id-eurodance">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-form__wrapper">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--food filter-form__fieldset--nojs filter-form__fieldset--closed">
+              <legend class="filter-form__legend">Еда</legend>
+              <button class="filter-form__toggle filter-form__toggle--food" type="button"></button>
+              <ul class="filter-form__list">
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="meat" id="id-meat" checked>
+                  <label for="id-meat">Мясоед</label>
+                </li>
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="diet" id="id-diet">
+                  <label for="id-diet">Сидит на ПП</label>
+                </li>
+                <li class="filter-form__item">
+                  <input class="visually-hidden filter-form__input filter-form__input-checkbox" type="checkbox" name="vegan" id="id-vegan">
+                  <label for="id-vegan">Веган-сыроед</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-form__wrapper">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--transport filter-form__fieldset--nojs filter-form__fieldset--closed">
+              <legend class="filter-form__legend">Транспорт</legend>
+              <button class="filter-form__toggle filter-form__toggle--transport" type="button"></button>
+              <ul class="filter-form__transport-list transport-list">
+                <li class="transport-list__item">
+                  <input class="visually-hidden transport-list__input transport-list__input-checkbox" type="checkbox" name="plane" id="id-plane" checked>
+                  <label for="id-plane">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 19 21">
+                      <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"/>
+                    </svg>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <input class="visually-hidden transport-list__input transport-list__input-checkbox" type="checkbox" name="bus" id="id-bus">
+                  <label for="id-bus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 17 21">
+                      <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"/>
+                    </svg>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <input class="visually-hidden transport-list__input transport-list__input-checkbox" type="checkbox" name="bike" id="id-bike">
+                  <label for="id-bike">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 24 21">
+                      <path d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+                    </svg>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <input class="visually-hidden transport-list__input transport-list__input-checkbox" type="checkbox" name="run" id="id-run">
+                  <label for="id-run">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 20 21">
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z"/>
+                    </svg>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-form__level filter-form__level--nojs filter-form__fieldset--closed filter-range">
+            <div class="filter-range__title--wrapper">
+              <p class="filter-range__title">Левел</p>
+            <button class="filter-form__toggle filter-form__toggle--level" type="button"></button>
+            <div class="filter-form__wrapper">
+              <div class="filter-range__wrapper">
+                <div class="filter-range__level-control">
+                  <label class="filter-range__min-level" for="id-filter-range__min-level">
+                    <input type="text" name="filter-range__min-level" id="id-filter-range__min-level" value="30">
+                  </label>
+                  <label class="filter-range__max-level" for="id-filter-range__max-level">
+                    <input type="text" name="filter-range__max-level" id="id-filter-range__max-level" value="100">
+                  </label>
+                </div>
+                <div class="filter-range__range-control">
+                  <div class="filter-range__scale">
+                    <div class="filter-range__bar">
+                    </div>
+                  </div>
+                  <div class="filter-range__toggle filter-range__toggle--min">
+                  </div>
+                  <div class="filter-range__toggle filter-range__toggle--max">
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        <button class="filter-form__submit-button">Показать</button>
+        </form>
+      </section>
+      <section class="catalog container">
+        <ul class="catalog__list">
+          <li class="catalog__item companion-card">
+            <a class="companion-card__img-link" href="#">
+              <picture class="companion-card__image">
+                <source srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="companion-card__photo" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg" width="70" height="70" alt="Фото попутчика">
+              </picture>
+            </a>
+            <div class="companion-card__name-wrapper">
+              <span class="companion-card__indicator"></span>
+              <h3 class="companion-card__name">
+                <a class="companion-card__link" href="#">Таня Фирсова</a>
+              </h3>
+            </div>
+            <div class="companion-card__button-wrapper">
+              <button type="button" class="companion-card__like-button companion-card__like-button--active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+                  <path d="M12 1a3.32 3.32 0 00-4.7 0l-.8.7-.8-.7A3.32 3.32 0 001 1C-.3 2.3-.3 4.4 1 5.6l.8.8L6.5 11l4.7-4.6.8-.8c1.3-1.3 1.3-3.4 0-4.6z" fill="#f02323"/>
+                </svg>
+              </button>
+              <span class="companion-card__like-count">1,5 М</span>
+            </div>
+            <ul class="companion-card__hashtags-list hashtags-list">
+              <li class="hashtags-list__item">
+                <a href="#">#ЗОЖ</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#ПП</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#Фитнес</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#пляж</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#авокадо</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#смузи</a>
+              </li>
+            </ul>
+            <div class="companion-card__country-list-wrapper">
+              <p class="companion-card__wrapper-country-title">хочет посетить:</p>
+              <ul class="companion-card__country-list country-list">
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Шри Ланка" aria-label="Шри Ланка">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/sri-lanka-flag-x1.png" width="26" height="18" alt="Шри Ланка">
+                </li>
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Тайланд" aria-label="Тайланд">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/thailand-flag-x1.png" width="26" height="18" alt="Тайланд">
+                </li>
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Сейшелы" aria-label="Сейшелы">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/seychelles-flag-x1.png" width="26" height="18" alt="Сейшелы">
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__way-of-travelling-list-wrapper">
+              <p class="companion-card__wrapper-transport-title">транспорт:</p>
+              <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 19 21">
+                    <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 17 21">
+                    <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 24 21">
+                    <path d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Пешком" aria-label="Пешком">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 20 21">
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z"/>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__round-diagram-wrapper">
+              <p class="companion-card__wrapper-level-title">левел:</p>
+              <div class="companion-card__round-diagram round-diagram">
+                <svg class="round-diagram__progress-pie">
+                  <circle r="28.5" cx="30" cy="30" stroke-width="3px" stroke-dasharray="178,98" stroke-dashoffset="5"></circle>
+                </svg>
+                <span class="round-diagram__level">99</span>
+                <span class="round-diagram__text">level</span>
+              </div>
+            </div>
+            <a class="companion-card__button-card" href="response.html">Позвать!</a>
+          </li>
+          <li class="catalog__item companion-card">
+            <a class="companion-card__img-link" href="#">
+              <picture class="companion-card__image">
+                <source srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="companion-card__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg" width="70" height="70" alt="Фото попутчика">
+              </picture>
+            </a>
+            <div class="companion-card__name-wrapper">
+              <span class="companion-card__indicator"></span>
+              <h3 class="companion-card__name">
+                <a class="companion-card__link" href="#">Петя Демин</a>
+              </h3>
+            </div>
+            <div class="companion-card__button-wrapper">
+              <button type="button" class="companion-card__like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+                  <path d="M12 1a3.32 3.32 0 00-4.7 0l-.8.7-.8-.7A3.32 3.32 0 001 1C-.3 2.3-.3 4.4 1 5.6l.8.8L6.5 11l4.7-4.6.8-.8c1.3-1.3 1.3-3.4 0-4.6z" fill="#f02323"/>
+                </svg>
+              </button>
+              <span class="companion-card__like-count">1500</span>
+            </div>
+            <ul class="companion-card__hashtags-list hashtags-list">
+              <li class="hashtags-list__item">
+                <a href="#">#бургер</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#бар</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#футбол</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#концерт</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#крафт</a>
+              </li>
+            </ul>
+            <div class="companion-card__country-list-wrapper">
+              <p class="companion-card__wrapper-country-title">хочет посетить:</p>
+              <ul class="companion-card__country-list country-list">
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Бельгия" aria-label="Бельгия">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/belgium-flag-x1.png" width="26" height="18" alt="Бельгия">
+                </li>
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Чехия" aria-label="Чехия">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/czech-flag-x1.png" width="26" height="18" alt="Чехия">
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__way-of-travelling-list-wrapper">
+              <p class="companion-card__wrapper-transport-title">транспорт:</p>
+              <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 19 21">
+                    <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 17 21">
+                    <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 24 21">
+                    <path d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active"  data-tooltip="Пешком" aria-label="Пешком">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 20 21">
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z"/>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__round-diagram-wrapper">
+              <p class="companion-card__wrapper-level-title">левел:</p>
+                <div class="companion-card__round-diagram round-diagram">
+                  <svg class="round-diagram__progress-pie">
+                    <circle r="28.5" cx="30" cy="30" stroke-width="3px" stroke-dasharray="178,98" stroke-dashoffset="31"></circle>
+                  </svg>
+                  <span class="round-diagram__level">80</span>
+                  <span class="round-diagram__text">level</span>
+                </div>
+            </div>
+            <a class="companion-card__button-card">Позвать!</a>
+          </li>
+          <li class="catalog__item companion-card">
+            <a class="companion-card__img-link" href="#">
+              <picture class="companion-card__image">
+                <source srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="companion-card__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg" width="70" height="70" alt="Фото попутчика">
+              </picture>
+            </a>
+            <div class="companion-card__name-wrapper">
+              <span class="companion-card__indicator"></span>
+              <h3 class="companion-card__name">
+                <a class="companion-card__link" href="#">Марк Смолов</a>
+              </h3>
+            </div>
+            <div class="companion-card__button-wrapper">
+              <button type="button" class="companion-card__like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+                  <path d="M12 1a3.32 3.32 0 00-4.7 0l-.8.7-.8-.7A3.32 3.32 0 001 1C-.3 2.3-.3 4.4 1 5.6l.8.8L6.5 11l4.7-4.6.8-.8c1.3-1.3 1.3-3.4 0-4.6z" fill="#f02323"/>
+                </svg>
+              </button>
+              <span class="companion-card__like-count">170</span>
+            </div>
+            <ul class="companion-card__hashtags-list hashtags-list">
+              <li class="hashtags-list__item">
+                <a href="#">#рэп</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#тату</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#хайпбист</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a class="hashtags-list__link" href="#">#кроссовки</a>
+                <a class="hashtags-list__link--tablet" href="#">#сникеры</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#суприм</a>
+              </li>
+            </ul>
+            <div class="companion-card__country-list-wrapper">
+              <p class="companion-card__wrapper-country-title">хочет посетить:</p>
+              <ul class="companion-card__country-list country-list">
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="США" aria-label="США">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/united-states-of-america-flag-x1.png" width="26" height="18" alt="США">
+                </li>
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Австралия" aria-label="Австралия">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/australia-flag-x1.png" width="26" height="18" alt="Австралия">
+                </li>
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Доминика" aria-label="Доминика">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/dominica-flag-x1.png" width="26" height="18" alt="Доминика">
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__way-of-travelling-list-wrapper">
+              <p class="companion-card__wrapper-transport-title">транспорт:</p>
+              <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 19 21">
+                    <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 17 21">
+                    <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--active way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 24 21">
+                    <path d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Пешком" aria-label="Пешком">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 20 21">
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z"/>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__round-diagram-wrapper">
+              <p class="companion-card__wrapper-level-title">левел:</p>
+                <div class="companion-card__round-diagram round-diagram">
+                  <svg class="round-diagram__progress-pie">
+                    <circle r="28.5" cx="30" cy="30" stroke-width="3px" stroke-dasharray="178,98" stroke-dashoffset="134"></circle>
+                  </svg>
+                  <span class="round-diagram__level">25</span>
+                  <span class="round-diagram__text">level</span>
+                </div>
+            </div>
+            <a class="companion-card__button-card">Позвать!</a>
+          </li>
+          <li class="catalog__item companion-card">
+            <a class="companion-card__img-link" href="#">
+              <picture class="companion-card__image">
+                <source srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="companion-card__photo" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg" width="70" height="70" alt="Фото попутчика">
+              </picture>
+            </a>
+            <div class="companion-card__name-wrapper">
+              <span class="companion-card__indicator companion-card__indicator--active"></span>
+              <h3 class="companion-card__name">
+                <a class="companion-card__link" href="#">Лариса Роговая</a>
+              </h3>
+            </div>
+            <div class="companion-card__button-wrapper">
+              <button type="button" class="companion-card__like-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+                  <path d="M12 1a3.32 3.32 0 00-4.7 0l-.8.7-.8-.7A3.32 3.32 0 001 1C-.3 2.3-.3 4.4 1 5.6l.8.8L6.5 11l4.7-4.6.8-.8c1.3-1.3 1.3-3.4 0-4.6z" fill="#f02323"/>
+                </svg>
+              </button>
+              <span class="companion-card__like-count">23</span>
+            </div>
+            <ul class="companion-card__hashtags-list hashtags-list">
+              <li class="hashtags-list__item">
+                <a href="#">#образование</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#карьера</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#учеба</a>
+              </li>
+              <li class="hashtags-list__item">
+                <a href="#">#линкедин</a>
+              </li>
+            </ul>
+            <div class="companion-card__country-list-wrapper">
+              <p class="companion-card__wrapper-country-title">хочет посетить:</p>
+              <ul class="companion-card__country-list country-list">
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Великобритания" aria-label="Великобритания">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/united-kingdom-flag-x1.png" width="26" height="18" alt="Великобритания">
+                </li>
+                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Германия" aria-label="Германия">
+                  <img class="country-list__flag country-list__flag--catalog" src="img/germany-flag-x1.png" width="26" height="18" alt="Германия">
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__way-of-travelling-list-wrapper">
+              <p class="companion-card__wrapper-transport-title">транспорт:</p>
+              <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 19 21">
+                    <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 17 21">
+                    <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 24 21">
+                    <path d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+                  </svg>
+                </li>
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Пешком" aria-label="Пешком">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 20 21">
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z"/>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="companion-card__round-diagram-wrapper">
+              <p class="companion-card__wrapper-level-title">левел:</p>
+                <div class="companion-card__round-diagram round-diagram">
+                  <svg class="round-diagram__progress-pie">
+                    <circle r="28.5" cx="30" cy="30" stroke-width="3px" stroke-dasharray="178,98" stroke-dashoffset="89"></circle>
+                  </svg>
+                  <span class="round-diagram__level">50</span>
+                  <span class="round-diagram__text">level</span>
+                </div>
+            </div>
+            <a class="companion-card__button-card">Позвать!</a>
+          </li>
+        </ul>
+        <a class="catalog__button-more" href="newCompanions.html">Показать еще</a>
+        <div class="catalog__button-wrapper">
+          <ul class="catalog__page-lists">
+            <li class="catalog__page-lists-item">
+              <a class="catalog__page-link catalog__page-link--active" href="#">1</a>
+            </li>
+            <li class="catalog__page-lists-item" href="#">
+              <a class="catalog__page-link" href="#">2</a>
+            </li>
+            <li class="catalog__page-lists-item">
+              <a class="catalog__page-link" href="#">3</a>
+            </li>
+            <li class="catalog__page-lists-item">
+              <a class="catalog__page-link" href="#">4</a>
+            </li>
+          </ul>
+          <a class="catalog__button catalog__button--previous" href="newCompanions.html"></a>
+          <a class="catalog__button catalog__button--next" href="newCompanions.html"></a>
+        </div>
+      </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__logo">
+          <a class="page-footer__link" href="index.html">
+            <picture class="page-footer__logo-image">
+              <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+              <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+              <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">
+            </picture>
+          </a>
+        </div>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
+                <path d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z"/>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 30 15.8">
+                <path d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6h4.2c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3h-5.3c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8V3.4c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1H1.6c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z"/>
+              </svg>
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="18" viewBox="0 0 23 23" xml:space="preserve">
+                <path class="st0" d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z"/><path class="st0" d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z"/><circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
+              <path d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z" fill="#231f20"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/menu-button.js"></script>
+    <script src="js/filter-button.js"></script>
+    <script src="js/filter-transport.js"></script>
+    <script src="js/filter-music.js"></script>
+    <script src="js/filter-hobby.js"></script>
+    <script src="js/filter-food.js"></script>
+    <script src="js/filter-level.js"></script>
+    <script src="js/logo-change.js"></script>
+    <script src="js/scroll-menu.js"></script>
+  </body>
+</html>

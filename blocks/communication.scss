@@ -1,0 +1,67 @@
+.communication {
+  list-style: none;
+}
+
+.communication__item a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+
+  background-color: #ff8d30;
+}
+
+.communication__item:nth-child(2) a {
+  background-color: #ffbd30;
+}
+
+.communication__item a:hover,
+.communication__item a:focus {
+  background-color: #f26926;
+}
+
+.communication__item:nth-child(2) a:hover,
+.communication__item:nth-child(2) a:focus {
+  background-color: #ff8d30;
+}
+
+.communication__link svg {
+  fill: #161c35;
+}
+
+.communication__link--mail svg {
+  padding-top: 13px;
+}
+
+.communication__link--call svg {
+  padding-top: 11px;
+}
+
+.communication__item:active {
+  svg {
+    fill: transparentize($color: #161c35, $amount: 0.5);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .communication__item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .communication__item a {
+    height: 50px;
+    width: 50px;
+  }
+
+  .communication__link--mail svg {
+    padding-top: 18px;
+  }
+
+  .communication__link--call svg {
+    padding-top: 16px;
+  }
+}

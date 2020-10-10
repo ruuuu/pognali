@@ -1,0 +1,82 @@
+.filter {
+  margin: 0 auto;
+  border-radius: 20px;
+
+  color: #1d2e5b;
+}
+
+.filter__title {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-top: 26px;
+  font-size: 22.5px;
+  line-height: 22.5px;
+  font-weight: 700;
+  padding-bottom: 35px;
+  padding-left: 25px;
+  text-transform: none;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+  background-color: #ffd74b;
+  color: #1d2e5b;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .filter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .filter__title {
+    position: relative;
+    width: 633px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 40px;
+    padding-top: 36px;
+    padding-left: 35px;
+    padding-bottom: 70px;
+  }
+
+  .filter__title::before {
+    content: "";
+
+    position: absolute;
+    top: 103px;
+    left: 30px;
+    width: 617px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .filter__title::after {
+    content: "";
+
+    position: absolute;
+    top: 425px;
+    left: 30px;
+    width: 617px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    padding-left: 85px;
+  }
+
+  .filter__title {
+    width: 210px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 48px;
+    padding-left: 47px;
+    padding-right: 28px;
+    padding-bottom: 29px;
+  }
+}
