@@ -1,0 +1,20 @@
+.page-header--scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: 1s;
+
+  background-color: #ffffff;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-color: $background-desktop;
+  }
+
+  .page-header--scrolled {
+    background-color: #ffffff;
+  }
+}

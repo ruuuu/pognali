@@ -1,0 +1,52 @@
+.map {
+  margin-top: -20px;
+  height: 405px;
+}
+
+.map__interactive {
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  border: none;
+}
+
+.map__image {
+  overflow: hidden;
+}
+
+.map__photo {
+  position: relative;
+  margin-top: -600px;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 589px;
+  }
+
+  .map__photo {
+    width: 768px;
+    height: 700px;
+    margin-top: -750px;
+  }
+
+  .map__interactive {
+    height: 589px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 524px;
+  }
+
+  .map__interactive {
+    height: 524px;
+  }
+
+  .map__photo {
+    width: 1440px;
+    height: 750px;
+  }
+}

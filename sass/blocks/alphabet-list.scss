@@ -1,0 +1,135 @@
+.alphabet-list {
+  width: 227px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  list-style: none;
+}
+
+.alphabet-list__letter {
+  display: block;
+  width: 43px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  background-color: #ffffff;
+}
+
+.alphabet-list__item:nth-child(5n+1) {
+  border-left: 1px solid #cbced9;
+}
+
+.alphabet-list__item:nth-child(n+21) {
+  border-bottom: 1px solid #cbced9;
+}
+
+.alphabet-list__item {
+  border-right: 1px solid #cbced9;
+  border-top: 1px solid #cbced9;
+}
+
+.alphabet-list__letter--active {
+  color: #ffffff;
+  background-color: #1d2e5b;
+}
+
+.alphabet-list__letter-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .alphabet-list {
+    margin: 0;
+    width: 440px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-left: 14px;
+  }
+
+  .alphabet-list__letter {
+    display: block;
+    width: 77px;
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 34px;
+    border: none;
+    opacity: 0.2;
+
+    background-color: transparent;
+  }
+
+  .alphabet-list__item:nth-child(5n+1),
+  .alphabet-list__item:nth-child(n+21) {
+    border-left: none;
+  }
+
+  .alphabet-list__item:nth-child(n+21) {
+    border-bottom: none;
+  }
+
+  .alphabet-list__item {
+    border: none;
+  }
+
+  .alphabet-list__letter--active {
+    color: #192144;
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .alphabet-list {
+    width: 1298px;
+    text-align: left;
+  }
+
+  .alphabet-list__item {
+    padding-bottom: 40px;
+  }
+
+  .alphabet-list__item:nth-child(9) {
+    padding-bottom: 34px;
+  }
+
+  .alphabet-list__item:nth-child(11) {
+    padding-bottom: 70px;
+  }
+
+  .alphabet-list__item:nth-child(16) {
+    padding-bottom: 34px;
+  }
+
+  .alphabet-list__letter {
+    width: 251px;
+    padding-top: 31px;
+    padding-bottom: 47px;
+    opacity: 1;
+
+    background-color: transparent;
+  }
+
+  .alphabet-list__item:nth-child(11) .alphabet-list__letter {
+    padding-bottom: 55px;
+  }
+
+  .alphabet-list__item:nth-child(13) .alphabet-list__letter {
+    padding-bottom: 52px;
+  }
+
+  .alphabet-list__item:nth-last-child(-n + 5) .alphabet-list__letter {
+    padding-bottom: 55px;
+  }
+
+  .alphabet-list__letter--active {
+    color: #192144;
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  .alphabet-list__letter-list {
+    display: block;
+    padding-top: 80px;
+  }
+}

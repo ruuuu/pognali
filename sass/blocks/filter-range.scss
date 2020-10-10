@@ -1,0 +1,359 @@
+.filter-range {
+  position: relative;
+}
+
+.filter-range__wrapper {
+  width: 220px;
+  padding-left: 20px;
+  margin: 0 auto;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-range__title {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 1px;
+  padding-left: 25px;
+  margin-bottom: 11px;
+
+  color: #1d2e5b;
+}
+
+.filter-range__title::before {
+  content: "";
+
+  position: absolute;
+
+  top: -13px;
+  left: 26px;
+  width: 220px;
+  height: 1px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-range__title:hover,
+.filter-range__title:hover + .filter-form__toggle,
+.filter-range .filter-form__toggle--level:hover,
+.filter-range .filter-form__toggle--level:focus {
+  opacity: 0.6;
+}
+
+.filter-range .filter-range__title:active,
+.filter-range .filter-form__toggle--level:active {
+  opacity: 0.3;
+}
+
+.filter-range__level-control {
+  position: relative;
+  display: flex;
+  margin-bottom: 25px;
+  height: 35px;
+
+  font-size: 0;
+}
+
+.filter-range input {
+  outline: none;
+  position: relative;
+  width: 108px;
+  padding-top: 11px;
+  padding-bottom: 6px;
+  font-size: 15px;
+  line-height: 13.5px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  border: 1px solid #cbced9;
+  text-align: center;
+
+  color: #1d2e5b;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #959bb2;
+  }
+
+  &:focus {
+    border: 1px solid #161c35;
+  }
+}
+
+.filter-range__min-level input {
+  padding-left: 3px;
+}
+
+.filter-range__max-level input {
+  line-height: 15px;
+}
+
+.filter-range__level-control::before {
+  content: "";
+
+  position: absolute;
+
+  top: 14px;
+  right: 103px;
+  width: 10px;
+  height: 11px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.filter-range__level-control::after {
+  content: "";
+
+  position: absolute;
+
+  top: 17px;
+  right: 103px;
+  width: 14px;
+  height: 2px;
+  z-index: 1;
+  background-color: #cbced9;
+}
+
+.filter-range__level-control label {
+  display: inline-block;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.filter-range__range-control {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.filter-range__range-control .filter-range__scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-range__range-control .filter-range__bar {
+  position: relative;
+  right: -68px;
+  width: 65%;
+  height: 2px;
+
+  background-color: #1d2e5b;
+}
+
+.filter-range__toggle {
+  position: absolute;
+  top: -5px;
+
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    top: -10px;
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
+}
+
+.filter-range__toggle--min {
+  right: 65%;
+}
+
+.filter-range__toggle--max {
+  right: 0;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .filter-range {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+  }
+
+  .filter-range__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-left: 35px;
+  }
+
+  .filter-range__title::before {
+    top: 11px;
+    left: 102%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+
+    background-color: #1d2e5b;
+    box-shadow: 0 6px 0  0 #1d2e5b;
+  }
+
+  .filter-range__title--wrapper {
+    display: flex;
+  }
+
+  .filter-range__wrapper {
+    width: 148px;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: 393px;
+    padding-right: 10px;
+  }
+
+  .filter-range__level-control {
+    margin-top: -9px;
+  }
+
+  .filter-range input {
+    width: 72px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .filter-range__min-level input {
+    padding-left: 2px;
+  }
+
+  .filter-range__level-control::before {
+    top: 15px;
+    right: 73px;
+    height: 15px;
+  }
+
+  .filter-range__level-control::after {
+    top: 21px;
+    right: 64px;
+    width: 20px;
+  }
+
+  .filter-range__range-control {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .filter-range__range-control .filter-range__scale {
+    position: relative;
+    top: -42px;
+    right: 350px;
+    width: 277px;
+    height: 3px;
+    border-radius: 1.5px;
+
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .filter-range__range-control .filter-range__bar {
+    position: relative;
+    right: -80px;
+    width: 203px;
+    height: 3px;
+    border-radius: 1.5px;
+  }
+
+  .filter-range__toggle {
+    top: -46px;
+    width: 13px;
+    height: 13px;
+
+    &:hover,
+    &:focus {
+      top: -50px;
+    }
+  }
+
+  .filter-range__toggle--min {
+    right: 410px;
+  }
+
+  .filter-range__toggle--max {
+    right: 210px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-range__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-left: 46px;
+  }
+
+  .filter-range__wrapper {
+    padding-left: 47px;
+  }
+
+  .filter-range input {
+    width: 93px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .filter-range__level-control::before {
+    top: 17px;
+    right: 120px;
+    width: 10px;
+    height: 13px;
+  }
+
+  .filter-range__level-control::after {
+    top: 23px;
+    right: 116px;
+    width: 20px;
+    height: 2px;
+  }
+
+  .filter-range__level-control {
+    position: relative;
+    display: flex;
+    margin-bottom: 48px;
+    height: 35px;
+  }
+
+  .filter-range__range-control .filter-range__scale {
+    width: 190px;
+    height: 3px;
+    border-radius: 1.5px;
+
+    background: rgba(29, 46, 91, 0.2);
+  }
+
+  .filter-range__range-control .filter-range__bar {
+    right: -65px;
+    width: 125px;
+    height: 3px;
+    border-radius: 1.5px;
+  }
+
+  .filter-range__range-control {
+    margin-bottom: 43px;
+  }
+
+  .filter-range__toggle {
+    width: 13px;
+    height: 13px;
+  }
+
+  .filter-range__toggle--min {
+    right: 29px;
+  }
+
+  .filter-range__toggle--max {
+    right: 148px;
+  }
+}

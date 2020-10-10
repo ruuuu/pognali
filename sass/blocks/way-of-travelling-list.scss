@@ -1,0 +1,26 @@
+.way-of-travelling-list {
+  list-style: none;
+}
+
+.way-of-travelling-list__item {
+  margin-right: 17px;
+  margin-bottom: 5px;
+
+  fill: #d9d9d9;
+}
+
+.way-of-travelling-list__item:nth-child(2) {
+  margin-right: 13px;
+}
+
+.way-of-travelling-list__item:nth-child(3) {
+  margin-right: 10px;
+}
+
+.way-of-travelling-list__item:nth-last-child(-n + 1) {
+  margin: 0;
+}
+
+.way-of-travelling-list__item--active {
+  fill: #1d2e5b;
+}

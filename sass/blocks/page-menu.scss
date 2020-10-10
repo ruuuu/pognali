@@ -1,0 +1,138 @@
+.page-menu {
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 9px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 3;
+
+  background-color: #161c35;
+}
+
+.page-menu__wrapper {
+  width: 100%;
+}
+
+.page-menu__title {
+  position: relative;
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.page-menu__title::after {
+  content: "";
+
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 173px;
+  height: 5px;
+  border-radius: 2.4px;
+
+  background-color: #ff8d30;
+}
+
+.page-menu__link {
+  display: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-menu {
+    padding-top: 86px;
+    padding-bottom: 62px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .page-menu__wrapper {
+    padding-left: 75px;
+    padding-right: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-menu__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .page-menu__title::after {
+    top: 128px;
+    left: 2px;
+    width: 287px;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  .page-menu__link {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-right: 61px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .page-menu__link::before {
+    content: "";
+
+    position: absolute;
+
+    top: 9px;
+    right: 0;
+    width: 32px;
+    height: 16px;
+
+    background-image: url("../img/return.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-menu {
+    padding-top: 112px;
+    padding-bottom: 62px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .page-menu__title::after {
+    left: 0;
+  }
+
+  .page-menu__wrapper {
+    padding-left: 125px;
+    padding-right: 133px;
+    width: 1440px;
+  }
+
+  .page-menu__link {
+    padding-right: 50px;
+  }
+
+  .page-menu__link::before {
+    right: -10px;
+  }
+}

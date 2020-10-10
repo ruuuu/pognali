@@ -1,0 +1,328 @@
+.profile {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 4;
+
+  background-color: #edeff6;
+}
+
+.profile__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("../img/rates-mobile-x1.png");
+  background-repeat: no-repeat;
+  background-position: top 5px right 26px;
+}
+
+.profile__button {
+  position: relative;
+  text-decoration: none;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+
+  color: #192144;
+}
+
+.profile__button:hover,
+.profile__button:focus {
+  color: transparentize($color: #1d2e5b, $amount: 0.1);
+
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.profile__button:active {
+  color: transparentize($color: #1d2e5b, $amount: 0.3);
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.profile__title {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 144px;
+  margin-bottom: 41px;
+}
+
+.profile__list {
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+  padding-left: 23px;
+  padding-right: 40px;
+  margin-bottom: 31px;
+  list-style: none;
+}
+
+.profile__text {
+  position: relative;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 13px;
+  padding-bottom: 7px;
+  color: #717273;
+}
+
+.profile__text p {
+  margin: 0;
+}
+
+.profile__text::before {
+  content: "";
+
+  position: absolute;
+
+  top: 5px;
+  right: -39px;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #ffa530;
+}
+
+.profile__text::after {
+  content: "1";
+
+  position: absolute;
+
+  top: 17px;
+  right: -26px;
+  line-height: 14px;
+
+  color: #ffffff;
+}
+
+.profile__text:nth-child(2) {
+  padding-top: 14px;
+
+  &::after {
+    content: "2";
+    top: 18px;
+  }
+
+  &::before {
+    top: 6px;
+    background-color: #ffbd30;
+  }
+}
+
+.profile__text:nth-child(3) {
+  padding-top: 14px;
+
+  border-bottom: 1px solid #f2f2f2;
+
+  &::after {
+    content: "3";
+    top: 19px;
+  }
+
+  &::before {
+    top: 7px;
+    background-color: #ffd74b;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    padding-bottom: 21px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .profile__wrapper {
+    padding-bottom: 63px;
+    background-image: url("../img/rates-tablet-x1.png");
+    background-repeat: no-repeat;
+    background-position: top 117px right 40px;
+  }
+
+  .profile__text {
+
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    display: flex;
+    order: 3;
+  }
+
+  .profile__list {
+    padding-right: 33px;
+    padding-left: 88px;
+    margin-bottom: 59px;
+  }
+
+  .profile__list li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile__counter {
+    order: 2;
+  }
+
+  .profile__title {
+    padding-right: 0;
+    padding-top: 22px;
+    padding-left: 2px;
+    margin-bottom: 71px;
+    text-align: center;
+  }
+
+  .profile__text::before {
+    top: -1px;
+    left: -87px;
+
+    width: 67px;
+    height: 67px;
+  }
+
+  .profile__text::after {
+    top: 20px;
+    right: 614px;
+    line-height: 28px;
+  }
+
+  .profile__text:nth-child(2) {
+    padding-top: 17px;
+
+    &::after {
+      content: "2";
+      top: 18px;
+    }
+
+    &::before {
+      top: 0;
+      background-color: #ffbd30;
+    }
+  }
+
+  .profile__text:nth-child(3) {
+    padding-top: 17px;
+
+    border-bottom: 1px solid #e1e3e9;
+
+    &::after {
+      content: "3";
+      top: 19px;
+    }
+
+    &::before {
+      top: 1px;
+      background-color: #ffd74b;
+    }
+  }
+
+  .profile a {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 89px;
+    padding-bottom: 23px;
+    padding-top: 23px;
+  }
+
+  .profile a::before {
+    content: "";
+
+    position: absolute;
+
+    top: -2px;
+    left: 0;
+
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+
+    background-color: #e2e5f2;
+  }
+
+  .profile a::after {
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+    left: 25px;
+
+    width: 17px;
+    height: 21px;
+
+    background-image: url("../img/business.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    padding-top: 65px;
+    padding-bottom: 123px;
+  }
+
+  .profile__title {
+    margin-bottom: 130px;
+  }
+
+  .profile__list {
+    padding-left: 158px;
+    padding-right: 344px;
+  }
+
+  .profile__wrapper {
+    background-image: url("../img/rates-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top 168px right 134px;
+  }
+
+  .profile__text::before {
+    top: -1px;
+    left: -89px;
+
+    width: 67px;
+    height: 67px;
+  }
+
+  .profile__text::after {
+    top: 20px;
+    left: -62px;
+    line-height: 28px;
+  }
+
+  .profile a {
+    padding-left: 160px;
+  }
+
+  .profile a::before {
+    content: "";
+    top: -2px;
+    left: 70px;
+  }
+
+  .profile a::after {
+    content: "";
+
+    position: absolute;
+
+    top: 21px;
+    left: 96px;
+
+    width: 17px;
+    height: 21px;
+
+    background-image: url("../img/business.svg");
+    background-repeat: no-repeat;
+  }
+}

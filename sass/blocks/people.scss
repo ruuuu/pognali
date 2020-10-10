@@ -1,0 +1,197 @@
+.people {
+  list-style: none;
+}
+
+.people__item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.people__wrapper {
+  position: relative;
+  padding-left: 43px;
+  padding-right: 38px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  list-style: none;
+
+  background-color: #ffffff;
+}
+
+.people__image {
+  display: block;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.people__image img {
+  position: relative;
+  display: block;
+  transition: 1s;
+}
+
+.people__country-list,
+.people__hashtags-list,
+.people__way-of-travelling {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.people__country-list {
+  margin-top: -11px;
+  padding-right: 5px;
+  margin-bottom: 7px;
+}
+
+.people__item:nth-child(2) .people__country-list {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.people__item:nth-child(2) .people__hashtags-list {
+  padding-left: 12px;
+}
+
+.people__hashtags-list {
+  padding-left: 5px;
+  margin-bottom: 17px;
+}
+
+.people__way-of-travelling {
+  padding-right: 5px;
+}
+
+.people__name-wrapper {
+  display: flex;
+  padding-right: 20px;
+  margin-bottom: 13px;
+}
+
+.people__item:hover,
+.people__item:focus {
+  box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+}
+
+.people__item:hover .people__photo,
+.people__item:focus .people__photo {
+  transform: scale(1.3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.people__name {
+  margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+  color: #1d2e5b;
+}
+
+.people__name-wrapper:hover,
+.people__name-wrapper:focus {
+  opacity: 0.7;
+}
+
+.people__name-wrapper:active {
+  opacity: 0.3;
+}
+
+.people__indicator {
+  position: relative;
+  display: block;
+  margin-right: 11px;
+  margin-top: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+
+  background-color: #f97676;
+}
+
+.people__indicator--active {
+  background-color: #81e31e;
+}
+
+.people__link {
+  text-decoration: none;
+  color: #1d2e5b;
+}
+
+@media (min-width: $tablet-width) {
+  .people {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .people__image img {
+    width: 285px;
+    height: 285px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .people__item {
+    max-width: 285px;
+    margin-right: 48px;
+  }
+
+  .people__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .people__country-list {
+    margin-bottom: 11px;
+  }
+
+  .people__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .people__wrapper {
+    padding-left: 31px;
+    padding-right: 27px;
+    padding-bottom: 17px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .people__hashtags-list {
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .people__item:nth-child(2) .people__hashtags-list {
+    padding-left: 0;
+  }
+
+  .people__indicator {
+    margin-right: 15px;
+    margin-top: 8px;
+    width: 7px;
+    height: 7px;
+  }
+
+  .people__name-wrapper {
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .people {
+    padding-right: 0;
+  }
+
+  .people__item {
+    margin-right: 60px;
+  }
+}

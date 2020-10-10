@@ -1,0 +1,124 @@
+.destinations {
+  position: relative;
+  margin-top: -60px;
+  padding-top: 132px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 1;
+
+  background-color: #edeff6;
+}
+
+.destinations__title {
+  margin: 0;
+  margin-bottom: 19px;
+  padding-left: 26px;
+}
+
+.destinations__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  margin-bottom: 60px;
+  padding-left: 25px;
+  padding-right: 51px;
+  text-align: left;
+  white-space: pre-line;
+
+  color: #4f4f50;
+}
+
+.destinations__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
+.destinations__to-all {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .destinations {
+    padding-bottom: 80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .destinations__wrapper {
+    background-image: url("../img/flags-back-tablet-x1.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 8px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back-tablet-x2.png");
+      background-size: 683px 575px;
+    }
+  }
+
+  .destinations__title {
+    padding-left: 32px;
+    margin-bottom: 59px;
+  }
+
+  .destinations__text {
+    width: 350px;
+    font-size: 28px;
+    line-height: 33px;
+    padding-left: 35px;
+    margin-bottom: 104px;
+  }
+
+  .destinations__list {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 47px;
+  }
+
+  .destinations__to-all {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .destinations {
+    padding-top: 131px;
+    padding-bottom: 92px;
+  }
+
+  .destinations__wrapper {
+    padding-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img/flags-back-desktop-x1.png");
+    background-repeat: no-repeat;
+    background-position: right 60px top 17px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back-desktop-x2.png");
+      background-size: 1320px 575px;
+    }
+  }
+
+  .destinations__list {
+    padding-left: 70px;
+    order: 1;
+  }
+
+  .destinations__wrap {
+    padding-top: 5px;
+    padding-left: 106px;
+    order: 2;
+  }
+
+  .destinations__to-all {
+    height: 23px;
+    padding-left: 32px;
+    padding-right: 103px;
+    margin-left: 804px;
+    margin-top: -128px;
+    order: 3;
+  }
+}

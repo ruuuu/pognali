@@ -1,0 +1,757 @@
+.companion-card {
+  width: 234px;
+  padding-top: 15px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 22px;
+  border-radius: 20px;
+}
+
+.companion-card:nth-child(2n) .companion-card__country-list-wrapper {
+  padding-bottom: 10px;
+}
+
+.companion-card:nth-child(3) .companion-card__country-list-wrapper {
+  padding-bottom: 8px;
+}
+
+.companion-card:hover,
+.companion-card:focus {
+  box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+}
+
+.companion-card:hover .companion-card__photo,
+.companion-card:focus .companion-card__photo {
+  transform: scale(1.1);
+}
+
+.companion-card__img-link {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.companion-card__photo {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.companion-card__name-wrapper {
+  width: 115px;
+  display: flex;
+  padding-left: 15px;
+  margin-bottom: 13px;
+  padding-bottom: 2px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.companion-card__name-wrapper:hover,
+.companion-card__name-wrapper:focus {
+  opacity: 0.6;
+}
+
+.companion-card__name-wrapper:active {
+  opacity: 0.3;
+}
+
+.companion-card__name {
+  margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  width: 100px;
+
+  color: #1d2e5b;
+}
+
+.companion-card__name-wrapper .companion-card__indicator {
+  position: relative;
+  display: block;
+  top: 8px;
+  right: -38px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  order: 2;
+
+  background-color: #f97676;
+}
+
+.companion-card__name-wrapper .companion-card__indicator--active {
+  background-color: #81e31e;
+}
+
+.companion-card__link {
+  text-decoration: none;
+  color: #1d2e5b;
+}
+
+.companion-card__button-wrapper {
+  display: flex;
+  margin-left: 50px;
+  margin-top: -30px;
+  margin-bottom: 15px;
+}
+
+.companion-card__like-button svg {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.companion-card__like-button path {
+  stroke: #192144;
+  width: 15px;
+  height: 13px;
+  stroke-opacity: 0.3;
+  fill: transparent;
+}
+
+.companion-card__like-button {
+  display: block;
+  position: relative;
+  width: 31px;
+  height: 31px;
+  padding-right: 10px;
+  border: none;
+  z-index: 1;
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: #edeff6;
+}
+
+.companion-card__like-button:hover,
+.companion-card__like-button:focus {
+  background-color: #e2e5f2;
+}
+
+.companion-card__like-button:hover path,
+.companion-card__like-button:focus path {
+  stroke-opacity: 0.5;
+}
+
+.companion-card__like-button:active path {
+  stroke-opacity: 0.1;
+}
+
+.companion-card__like-button--active {
+  background-color: #f9eaea;
+}
+
+.companion-card__like-button--active path {
+  fill: #f02323;
+  stroke: none;
+}
+
+.companion-card__like-button--active:hover,
+.companion-card__like-button--active:focus {
+  background-color: #f9d8d8;
+}
+
+.companion-card__like-button--active:active svg {
+  fill-opacity: 0.3;
+}
+
+.companion-card__like-count {
+  display: block;
+  width: 130px;
+  padding-top: 6px;
+  padding-left: 5px;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  word-wrap: break-word;
+
+  color: #161c35;
+}
+
+.companion-card__hashtags-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  padding-left: 8px;
+  padding-right: 40px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.companion-card__country-list-wrapper {
+  width: 100%;
+  padding-left: 9px;
+  padding-bottom: 5px;
+}
+
+.companion-card__country-list {
+  font-size: 15px;
+  padding-left: 0;
+}
+
+.companion-card__country-list .tooltip::before {
+  visibility: visible;
+
+  top: -13px;
+  left: 110px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 1;
+
+  background-color: transparent;
+  color: #1d2e5b;
+}
+
+.companion-card__country-list .tooltip::after {
+  display: none;
+}
+
+.companion-card__wrapper-country-title,
+.companion-card__wrapper-transport-title,
+.companion-card__wrapper-level-title {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.companion-card__wrapper-country-title::before {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  left: -27px;
+
+  width: 14px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.companion-card__wrapper-country-title::after {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  right: -18px;
+
+  width: 138px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.companion-card__wrapper-transport-title::before {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  left: -27px;
+
+  width: 14px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.companion-card__wrapper-transport-title::after {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  right: -40px;
+
+  width: 91px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.companion-card__wrapper-level-title {
+  padding-left: 14px;
+}
+
+.companion-card__wrapper-level-title::after {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  right: -24px;
+
+  width: 12px;
+  height: 1px;
+
+  background-color: #edeff6;
+}
+
+.companion-card__country-list .country-list__flag--catalog {
+  width: 26px;
+  height: 18px;
+  padding-right: 15px;
+}
+
+.companion-card__country-list .country-list__item--catalog {
+  margin-bottom: 2px;
+}
+
+.companion-card__way-of-travelling-list-wrapper {
+  padding-left: 6px;
+  padding-right: 36px;
+  margin-bottom: 14px;
+}
+
+.companion-card__way-of-travelling-list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 132px;
+}
+
+.companion-card__way-of-travelling-list .way-of-travelling-list__item--catalog {
+  width: 33px;
+  height: 32px;
+  margin-right: 0;
+  border-radius: 50%;
+
+  background-color: #edeff6;
+}
+
+.companion-card__way-of-travelling-list svg {
+  position: relative;
+  left: 8px;
+  top: 7px;
+}
+
+.companion-card__round-diagram-wrapper {
+  position: relative;
+}
+
+.companion-card__round-diagram {
+  top: 16px;
+  left: 5px;
+
+  &::before {
+    display: none;
+  }
+}
+
+.companion-card__round-diagram svg {
+  fill: #ffffff;
+}
+
+.companion-card__round-diagram circle {
+  r: 21.5px;
+  stroke-dasharray: 135.02px;
+}
+
+.companion-card__round-diagram span:nth-child(2) {
+  top: 24px;
+  left: 17px;
+  line-height: 18px;
+
+  color: #1d2e5b;
+}
+
+.companion-card__round-diagram span:nth-child(3) {
+  display: none;
+}
+
+.companion-card__button-card {
+  display: block;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  width: 230px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #161c35;
+  background-color: #ffd74b;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: transparentize($color: #161c35, $amount: 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .companion-card:nth-child(3) circle {
+    stroke-dasharray: 135.02px;
+    stroke-dashoffset: 101.265px;
+  }
+
+  .companion-card:nth-child(4) circle {
+    stroke-dasharray: 135.02px;
+    stroke-dashoffset: 67.51px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .companion-card {
+    width: 613px;
+    padding-top: 34px;
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+  }
+
+  .companion-card__img-link {
+    border-radius: 25px;
+  }
+
+  .companion-card__photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+
+  .companion-card__name-wrapper {
+    width: 230px;
+    display: flex;
+    padding-left: 33px;
+    padding-right: 20px;
+    margin-bottom: 144px;
+    padding-bottom: 5px;
+    align-self: start;
+    order: 1;
+  }
+
+  .companion-card__name {
+    margin: 0;
+    width: auto;
+    max-width: 320px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .companion-card__name-wrapper .companion-card__indicator {
+    top: 9px;
+    right: -23px;
+    width: 7px;
+    height: 7px;
+  }
+
+  .companion-card__button-wrapper {
+    margin-left: 368px;
+    margin-top: -50px;
+    order: 4;
+  }
+
+  .companion-card__button-wrapper svg {
+    width: 20px;
+    height: 17px;
+    top: 2px;
+    left: 2px;
+  }
+
+  .companion-card__like-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .companion-card__like-count {
+    padding-top: 11px;
+    padding-left: 8px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .companion-card__hashtags-list {
+    width: 250px;
+    font-size: 20px;
+    line-height: 24px;
+    order: 2;
+    margin-top: -144px;
+    margin-left: 218px;
+    align-self: flex-start;
+  }
+
+  .companion-card__country-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .companion-card__country-list .country-list__item--catalog {
+    margin-right: 129px;
+  }
+
+  .companion-card__country-list .country-list__item--catalog:nth-child(2) {
+    margin-right: 105px;
+  }
+
+  .companion-card__country-list .country-list__item--catalog:nth-child(3n + 2) {
+    margin-right: 105px;
+  }
+
+  .companion-card:nth-child(2) .country-list__item--catalog {
+    margin-right: 105px;
+  }
+
+  .companion-card:nth-child(3) .country-list__item--catalog {
+    margin-right: 60px;
+  }
+
+  .companion-card:nth-child(3) .country-list__item--catalog:nth-child(2) {
+    margin-right: 123px;
+  }
+
+  .companion-card:nth-child(4) .country-list__item--catalog {
+    margin-right: 181px;
+  }
+
+  .companion-card__country-list-wrapper {
+    width: 100%;
+    padding-top: 8px;
+    order: 4;
+    padding-left: 0;
+  }
+
+  .companion-card__country-list .tooltip::before {
+    top: -13px;
+    left: 120px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .companion-card__country-list .country-list__flag--catalog {
+    width: 35px;
+    height: 24px;
+  }
+
+  .companion-card__wrapper-transport-title,
+  .companion-card__wrapper-level-title {
+    display: none;
+  }
+
+  .companion-card__wrapper-country-title {
+    padding-left: 48px;
+  }
+
+  .companion-card__wrapper-country-title::before {
+    top: 8px;
+    left: -35px;
+    width: 71px;
+    height: 1px;
+  }
+
+  .companion-card__wrapper-country-title::after {
+    top: 8px;
+    right: -40px;
+    width: 500px;
+    height: 1px;
+  }
+
+  .companion-card__way-of-travelling-list-wrapper {
+    margin-left: auto;
+    padding: 0;
+    order: 1;
+    margin-top: -3px;
+    align-items: flex-start;
+  }
+
+  .companion-card__way-of-travelling-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 132px;
+  }
+
+  .companion-card__way-of-travelling-list .way-of-travelling-list__item--catalog {
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+
+  .companion-card__way-of-travelling-list svg {
+    width: 20px;
+    height: 22px;
+    left: 8px;
+    top: 7px;
+  }
+
+  .companion-card__round-diagram-wrapper {
+    order: 2;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+
+  .companion-card__round-diagram {
+    top: -57px;
+    left: -45px;
+    order: 3;
+
+    &::before {
+      display: block;
+      top: 36px;
+      left: 15px;
+
+      background-color: rgba(68, 68, 68, 0.4);
+    }
+  }
+
+  .companion-card__round-diagram circle {
+    r: 28.5px;
+    stroke-dasharray: 178.98px;
+  }
+
+  .companion-card__round-diagram span:nth-child(2) {
+    top: 14px;
+    left: 16px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .companion-card__round-diagram span:nth-child(3) {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    top: 39px;
+    left: 17px;
+
+    color: rgba(68, 68, 68, 0.4);
+  }
+
+  .companion-card__button-card {
+    font-size: 20px;
+    line-height: 30px;
+    width: 148px;
+    margin-left: 220px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin-top: -51px;
+    border-radius: 25px;
+    align-self: flex-start;
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companion-card {
+    width: 950px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .companion-card__img-link {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .companion-card__photo {
+    width: 285px;
+    height: 285px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .companion-card__name-wrapper {
+    padding-top: 48px;
+    padding-left: 52px;
+  }
+
+  .companion-card__name-wrapper .companion-card__indicator {
+    right: 17px;
+    order: 0;
+  }
+
+  .companion-card__button-wrapper {
+    margin-top: -96px;
+    margin-left: 490px;
+    order: 5;
+  }
+
+  .companion-card__hashtags-list {
+    width: 250px;
+    font-size: 20px;
+    line-height: 24px;
+    order: 2;
+    margin-top: -190px;
+    margin-left: 340px;
+    align-self: flex-start;
+  }
+
+  .companion-card__way-of-travelling-list-wrapper {
+    margin-left: 79px;
+    margin-bottom: 57px;
+    align-self: flex-end;
+  }
+
+  .companion-card__way-of-travelling-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .companion-card__country-list-wrapper {
+    width: 190px;
+    padding-top: 8px;
+    margin-top: -244px;
+    margin-right: 85px;
+    order: 4;
+    padding-left: 0;
+    align-self: flex-start;
+  }
+
+  .companion-card__country-list {
+    flex-direction: column;
+  }
+
+  .companion-card__country-list .country-list__item--catalog {
+    margin-bottom: 6px;
+  }
+
+  .companion-card__country-list .country-list__item--catalog:nth-child(2) {
+    margin-bottom: 4px;
+  }
+
+  .companion-card__country-list .tooltip::before {
+    top: -16px;
+    left: 126px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .companion-card__wrapper-country-title {
+    display: none;
+  }
+
+  .companion-card__round-diagram-wrapper {
+    order: 2;
+    align-self: flex-start;
+    margin-left: 254px;
+    margin-top: -45px;
+  }
+
+  .companion-card__button-card {
+    width: 148px;
+    margin-left: 342px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin-top: -97px;
+  }
+
+  .companion-card:nth-child(4) .country-list__item--catalog {
+    margin-right: 91px;
+  }
+}

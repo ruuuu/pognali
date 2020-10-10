@@ -1,0 +1,165 @@
+.transport-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-left: 24px;
+  padding-bottom: 15px;
+  text-transform: none;
+  list-style: none;
+}
+
+.transport-list .transport-list__item {
+  position: relative;
+  padding-left: 0;
+}
+
+.transport-list__item svg {
+  position: relative;
+  left: 8px;
+  top: 8px;
+  fill: #d9d9d9;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.transport-list__item:nth-child(2) svg {
+  top: 7px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.transport-list label {
+  display: block;
+  width: 33px;
+  height: 33px;
+}
+
+.transport-list .transport-list__input-checkbox:not(:checked) + label::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.transport-list .transport-list__input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.transport-list__input-checkbox:checked + label svg {
+  fill: #1d2e5b;
+}
+
+.transport-list__input-checkbox:checked + label:hover svg,
+.transport-list__input-checkbox:checked:focus + label svg {
+  fill: rgba(16, 30, 68, 0.7);
+}
+
+.transport-list__input-checkbox:checked + label:hover::after,
+.transport-list__input-checkbox:checked:focus + label::after {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.transport-list__input-checkbox:checked + label:active svg {
+  fill: rgba(16, 30, 68, 0.3);
+}
+
+.transport-list__input-checkbox:checked + label:active::after {
+  background-color: #e2e5f1;
+}
+
+.transport-list__input-checkbox:not(:checked) + label:hover svg,
+.transport-list__input-checkbox:not(:checked):focus + label svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.transport-list__input-checkbox:not(:checked) + label:hover::before,
+.transport-list__input-checkbox:not(:checked):focus + label::before {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.transport-list__input-checkbox:not(:checked) + label:active svg {
+  fill: rgba(6, 5, 0, 0.15);
+}
+
+.transport-list__input-checkbox:not(:checked) + label:active::before {
+  background-color: #e2e5f1;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .transport-list label {
+    padding: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list .transport-list__input-checkbox:not(:checked) + label::before {
+    left: 0;
+    top: -2px;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list .transport-list__input-checkbox:checked + label::after {
+
+    left: 0;
+    top: -2px;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list .transport-list__item svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transport-list {
+    padding-left: 45px;
+    padding-bottom: 30px;
+  }
+
+  .transport-list .transport-list__input-checkbox:not(:checked) + label::before {
+    left: 0;
+    top: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list .transport-list__input-checkbox:checked + label::after {
+    left: 0;
+    top: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list label {
+    padding: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list .transport-list__item svg {
+    top: 11px;
+    width: 23px;
+    height: 23px;
+  }
+}
